@@ -1,24 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bungee-Regular.ttf">
+            <string>Bungee-Regular</string>
+        </array>
+        <array key="MeriendaOne-Regular.ttf">
+            <string>MeriendaOne-Regular</string>
+        </array>
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfa-0z-dnO">
+                                <rect key="frame" x="85.5" y="52" width="243" height="70.5"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWh-Ia-XIp">
+                                <rect key="frame" x="16" y="130.5" width="382" height="40.5"/>
+                                <fontDescription key="fontDescription" name="MeriendaOne-Regular" family="Merienda One" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9N-TR-0TM">
+                                <rect key="frame" x="16" y="179" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPK-iQ-68Y">
+                                <rect key="frame" x="16" y="229" width="382" height="40.5"/>
+                                <fontDescription key="fontDescription" name="MeriendaOne-Regular" family="Merienda One" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HkX-Bc-bKp">
+                                <rect key="frame" x="16" y="277.5" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGj-no-sJR">
+                                <rect key="frame" x="16" y="327.5" width="382" height="40.5"/>
+                                <fontDescription key="fontDescription" name="MeriendaOne-Regular" family="Merienda One" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-PT-HPO">
+                                <rect key="frame" x="16" y="376" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRk-Yg-BuL">
+                                <rect key="frame" x="16" y="830" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="Bungee-Regular" family="Bungee" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Earned:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6j-nA-d7F">
+                                <rect key="frame" x="16" y="798" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="Bungee-Regular" family="Bungee" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m9N-TR-0TM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Wq-kY-Dfh"/>
+                            <constraint firstItem="VGj-no-sJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2J8-Iv-Ytp"/>
+                            <constraint firstItem="HkX-Bc-bKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2lK-Gw-eyn"/>
+                            <constraint firstItem="Lfa-0z-dnO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="3Rj-mo-Hi6"/>
+                            <constraint firstItem="XPK-iQ-68Y" firstAttribute="top" secondItem="m9N-TR-0TM" secondAttribute="bottom" constant="16" id="48c-Fa-p0R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XWh-Ia-XIp" secondAttribute="trailing" constant="16" id="6DN-OU-iom"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BRk-Yg-BuL" secondAttribute="bottom" constant="8" id="DD1-wT-NdR"/>
+                            <constraint firstItem="XWh-Ia-XIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LPR-T7-b2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m9N-TR-0TM" secondAttribute="trailing" constant="16" id="Ndb-q5-dMI"/>
+                            <constraint firstItem="m9N-TR-0TM" firstAttribute="top" secondItem="XWh-Ia-XIp" secondAttribute="bottom" constant="8" id="SEw-ye-aRO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XPK-iQ-68Y" secondAttribute="trailing" constant="16" id="SFj-lC-qKi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m6j-nA-d7F" secondAttribute="trailing" constant="16" id="UGC-dt-CPz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1H-PT-HPO" secondAttribute="trailing" constant="16" id="UwV-b5-n60"/>
+                            <constraint firstItem="XPK-iQ-68Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V2r-F1-MbZ"/>
+                            <constraint firstItem="T1H-PT-HPO" firstAttribute="top" secondItem="VGj-no-sJR" secondAttribute="bottom" constant="8" id="WpO-SV-LQR"/>
+                            <constraint firstItem="XWh-Ia-XIp" firstAttribute="top" secondItem="Lfa-0z-dnO" secondAttribute="bottom" constant="8" id="g2A-Gu-2ct"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGj-no-sJR" secondAttribute="trailing" constant="16" id="jv6-Py-K0o"/>
+                            <constraint firstItem="VGj-no-sJR" firstAttribute="top" secondItem="HkX-Bc-bKp" secondAttribute="bottom" constant="16" id="kab-Dp-Epz"/>
+                            <constraint firstItem="T1H-PT-HPO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="khN-2B-zLv"/>
+                            <constraint firstItem="Lfa-0z-dnO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oOx-D4-h4K"/>
+                            <constraint firstItem="HkX-Bc-bKp" firstAttribute="top" secondItem="XPK-iQ-68Y" secondAttribute="bottom" constant="8" id="oYy-VT-9Qf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HkX-Bc-bKp" secondAttribute="trailing" constant="16" id="sp2-MR-BWm"/>
+                            <constraint firstItem="BRk-Yg-BuL" firstAttribute="top" secondItem="m6j-nA-d7F" secondAttribute="bottom" constant="8" id="u4O-3d-8Ta"/>
+                            <constraint firstItem="m6j-nA-d7F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xEy-Fb-PRf"/>
+                            <constraint firstItem="BRk-Yg-BuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xuI-yh-2PA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BRk-Yg-BuL" secondAttribute="trailing" constant="16" id="zag-wK-6Pe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="billTextField" destination="m9N-TR-0TM" id="cO3-YT-ozY"/>
+                        <outlet property="numberOfPeopleTextField" destination="T1H-PT-HPO" id="z5Q-hR-gWn"/>
+                        <outlet property="tipEarnedLabel" destination="m6j-nA-d7F" id="bra-eH-f3N"/>
+                        <outlet property="tipTextField" destination="HkX-Bc-bKp" id="Meo-SU-oGg"/>
+                        <outlet property="totalAmountLabel" destination="BRk-Yg-BuL" id="y0T-K4-a6x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
         </scene>
     </scenes>
 </document>

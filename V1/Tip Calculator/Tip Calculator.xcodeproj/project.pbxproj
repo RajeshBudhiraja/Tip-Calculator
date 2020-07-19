@@ -15,6 +15,7 @@
 		A1241C0824B7831C002B5705 /* Bungee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1241C0524B7831C002B5705 /* Bungee-Regular.ttf */; };
 		A1241C0924B7831C002B5705 /* MeriendaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1241C0624B7831C002B5705 /* MeriendaOne-Regular.ttf */; };
 		A1241C0A24B7831C002B5705 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1241C0724B7831C002B5705 /* Pacifico-Regular.ttf */; };
+		A17A407224BE2F500092BFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17A407124BE2F500092BFA1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A1241C0524B7831C002B5705 /* Bungee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bungee-Regular.ttf"; sourceTree = "<group>"; };
 		A1241C0624B7831C002B5705 /* MeriendaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MeriendaOne-Regular.ttf"; sourceTree = "<group>"; };
 		A1241C0724B7831C002B5705 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		A17A407124BE2F500092BFA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				A1241BEF24B782E1002B5705 /* SceneDelegate.swift */,
 				A1241BF124B782E1002B5705 /* ViewController.swift */,
 				A1241BF324B782E1002B5705 /* Main.storyboard */,
+				A17A407124BE2F500092BFA1 /* LaunchScreen.storyboard */,
 				A1241BF924B782E4002B5705 /* Assets.xcassets */,
 				A1241BFE24B782E4002B5705 /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 				A1241C0824B7831C002B5705 /* Bungee-Regular.ttf in Resources */,
 				A1241C0924B7831C002B5705 /* MeriendaOne-Regular.ttf in Resources */,
 				A1241BFA24B782E4002B5705 /* Assets.xcassets in Resources */,
+				A17A407224BE2F500092BFA1 /* LaunchScreen.storyboard in Resources */,
 				A1241BF524B782E1002B5705 /* Main.storyboard in Resources */,
 				A1241C0A24B7831C002B5705 /* Pacifico-Regular.ttf in Resources */,
 			);
